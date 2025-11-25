@@ -1,0 +1,10 @@
+{
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  },
+  "name": "todolist",
+  "private": true,
+  "scripts": {
+    "start": "concurrently \"npm run start --prefix api\" \"npm run dev --prefix ui\""
+  }
+}

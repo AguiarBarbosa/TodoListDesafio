@@ -1,28 +1,12 @@
-import { useEffect } from 'react';
-import './App.css'
-import { taskService } from './api/task.service';
+import { TaskProvider } from "./contexts/TaskContext"
+import {Home} from "./pages/Home"
 
 function App() {
 
-  useEffect(() => {
-
-
-    taskService.list()
-    .then(res => console.log(res.data))
-    .catch(err => console.log(err))
-
-    taskService.show(4)
-    .then(res => console.log(res.data))
-    .catch(err => console.log(err))
-
-
-  }, []);
-    
-
   return (
-    <>
-
-    </>
+    <TaskProvider>
+      <Home/>
+    </TaskProvider>
   )
 }
 
