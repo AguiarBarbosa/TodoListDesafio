@@ -7,16 +7,21 @@ export const TaskForm = () => {
     const [title, setTitle] = useState<string>("")
     const [description, setDescription] = useState<string>("")
 
-    const notify = () => toast.warn("Digite um título antes de adicionar!", {
+    const notifyW = () => toast.warn("Digite um título antes de adicionar!", {
+        autoClose: 2500
+    });
+
+    const notifyS = () => toast.success("Task criada com Sucesso!", {
         autoClose: 2500
     });
 
     const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault()
 
-        if (title.trim() === "") return notify()
+        if (title.trim() === "") return notifyW()
 
         create({ title, description })
+        notifyS()
 
         setTitle("")
         setDescription("")
