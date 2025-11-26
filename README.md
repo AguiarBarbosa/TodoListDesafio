@@ -48,7 +48,9 @@ npm install
 cd api
 npm install
 npm install dotenv
+npm install cors
 npx prisma generate
+npx prisma migrate dev
 cd ..
 
 cd ui
