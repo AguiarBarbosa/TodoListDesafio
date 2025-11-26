@@ -4,7 +4,8 @@
 ## Notas do Desenvolvedor
 Fui pela contra-mão !!!
 
-Acredito que I.A é ferramenta, não muleta
+Acredito que I.A é ferramenta, não muleta !
+
 Portanto, o Back-End foi construído lendo muita documentação, vendo vídeos, 
 assistindo aulas, conversando com professores e colegas da área e várias
 maneiras de codar como na pré-história (a qual é base para validar inúmeras
