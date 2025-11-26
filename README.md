@@ -77,13 +77,13 @@ no navegador para fazer o fetch das tasks
 
 ## Insomnia
 Link para uso rápido do Insomnia
-[text](https://drive.google.com/file/d/1B-q6Cg58aeRfTIpCnOlx2DGHTR-9LnU-/view?usp=drive_link)
+[Insomnia](https://drive.google.com/file/d/1B-q6Cg58aeRfTIpCnOlx2DGHTR-9LnU-/view?usp=drive_link)
 
 ## Biblioteca utilizada (Não Citada)
 Tostify
 
 ## Suporte e Dúvidas
 Qualquer dúvida, entre em contato comigo pelo Linkedin
-[text](https://www.linkedin.com/in/lucas-aguiar-54a72a1b7/)
+[Linkedin](https://www.linkedin.com/in/lucas-aguiar-54a72a1b7/)
 Ou se tiver alguma outra rede social minha, sinta-se avontade para optar por ela
 
