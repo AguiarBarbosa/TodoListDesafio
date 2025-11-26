@@ -64,6 +64,9 @@ cd ..
 
 ```npm start```
 
+Eu deixei algumas frases criadas automaticamente e uns mocks no migration para você testar e enxergar
+a aplicação bem populada
+
 Aguarde um pouco, e acompanhe os logs no Terminal.
 O Front-End sempre carrega primeiro que o Back-End, então, reinicie a página
 no navegador para fazer o fetch das tasks
