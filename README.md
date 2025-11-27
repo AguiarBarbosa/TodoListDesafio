@@ -34,6 +34,8 @@ Projeto fullstack utilizando:
 ---
 
 ## Configuração
+```git clone https://github.com/AguiarBarbosa/TodoListDesafio.git```
+
 Copie o arquivo `.env.example` de **/api** e **/ui**  
 Renomeie ele para `.env` e adicione as suas variáveis de ambiente
 
