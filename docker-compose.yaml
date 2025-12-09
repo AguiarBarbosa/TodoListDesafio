@@ -1,0 +1,41 @@
+services:
+  backend:
+    image: node:24.6-alpine
+    working_dir: /app
+    environment:
+      DATABASE_URL: "mysql://root:root@database:3306/api"
+      CLIENT_URL: "http://localhost:5173"
+    volumes:
+      - ./api:/app
+    depends_on:
+      - database
+    ports:
+      - "3000:3000"
+    command: sh -c "npm install -g @nestjs/cli && npm install && npm run dev"
+
+  database:
+    image: mysql:latest
+    environment: 
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: api
+      MYSQL_PASSWORD: root
+    volumes:
+      - db_data:/var/lib/mysql
+    ports:
+      - "3306:3306"
+
+  frontend:
+    image: node:22.14-alpine
+    working_dir: /app
+    environment:
+      VITE_BASE_URL: "http://localhost:3000"
+    volumes:
+      - ./ui:/app
+    ports:
+      - "5173:5173"
+    depends_on:
+      - backend
+    command: sh -c "npm install && npm run dev -- --host"
+    
+volumes:
+  db_data:
